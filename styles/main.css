@@ -1,0 +1,160 @@
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.book-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #555;
+}
+
+.news-updates {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.news-updates h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-updates .news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.news-updates img {
+    width: 100%;
+    height: auto;
+}
+
+.news-updates h3 {
+    font-size: 1.5em;
+}
+
+.news-updates p {
+    font-size: 1em;
+}
+
+.news-updates .date {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.read-more-btn:hover {
+    background-color: #555;
+}
+
+.community-partners {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e8e8e8;
+}
+
+.community-partners h2 {
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.carousel img {
+    margin: 0 10px;
+    height: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
