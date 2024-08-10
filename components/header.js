@@ -1,22 +1,26 @@
 function Header() {
     return `
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="SEVEN Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#share">Share</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#stories">Stories</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                </ul>
-            </nav>
-            <button class="book-btn">Book</button>
-        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#share">SHARE</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#stories">STORIES</a></li>
+                <li><a href="#resources">RESOURCES</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="SEVEN Logo">
+        </div>
+        <button class="book-btn">BOOK</button>
     `;
 }
-document.getElementById('header').innerHTML = Header();
-document.getElementById('header-component').innerHTML = Header();
+document.addEventListener('DOMContentLoaded', function() {
+    const headerComponent = document.getElementById('header-component');
+    if (headerComponent) {
+        headerComponent.innerHTML = Header();
+    } else {
+        console.error('Header component element not found');
+    }
+});

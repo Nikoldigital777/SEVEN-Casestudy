@@ -1,11 +1,12 @@
 function Hero() {
-  return `
-        <section class="hero">
+    return `
+        <div class="hero">
             <h1>Creating Space for Mental Health in Schools</h1>
             <p>for Youth & Adults</p>
             <button class="learn-more-btn">Learn More</button>
-        </section>
+        </div>
     `;
 }
-document.getElementById("hero").innerHTML = Hero();
-document.getElementById("hero-component").innerHTML = Hero();
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('hero-component').innerHTML = Hero();
+});

@@ -1,171 +1,100 @@
-/* General Component Styling */
-.component-section {
-    margin: 40px 0;
+/* Components Library Specific Styles */
+body {
     padding: 20px;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.component-section {
+    margin-bottom: 60px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.component-section > h2 {
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 20px;
 }
 
 /* Header Component Styles */
-#header-component header {
-    background-color: #f8f8f8;
-    padding: 10px;
+#header-component {
+    position: relative;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-#header-component .logo img {
-    height: 50px;
+#header-component nav {
+    display: inline-block;
 }
 
-#header-component nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-#header-component nav ul li {
-    margin-right: 20px;
-}
-
-#header-component nav ul li a {
-    text-decoration: none;
-    color: #333;
+#header-component .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #header-component .book-btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+    float: right;
 }
 
 /* Hero Component Styles */
 #hero-component .hero {
-    text-align: center;
-    background: url("../images/hero-bg.jpg") no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 80px 20px;
-    border-radius: 5px;
-}
-
-#hero-component .hero h1 {
-    font-size: 2.5em;
-}
-
-#hero-component .hero p {
-    font-size: 1.2em;
-}
-
-#hero-component .learn-more-btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#hero-component .learn-more-btn:hover {
-    background-color: #555;
+    background-image: url('placeholder-hero-bg.jpg');
+    height: 500px;
 }
 
 /* News Updates Component Styles */
-#news-updates-component .news-updates {
-    padding: 40px 20px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-}
-
-#news-updates-component h2 {
-    text-align: center;
-    margin-bottom: 30px;
+#news-updates-component .news-grid {
+    display: flex;
+    justify-content: space-between;
 }
 
 #news-updates-component .news-item {
-    margin-bottom: 20px;
-    text-align: center;
+    width: 30%;
 }
 
 #news-updates-component .news-item img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-#news-updates-component .news-item h3 {
-    font-size: 1.5em;
-    margin-top: 15px;
-}
-
-#news-updates-component .news-item p {
-    font-size: 1em;
-}
-
-#news-updates-component .news-item .date {
-    color: #999;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-}
-
-#news-updates-component .read-more-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#news-updates-component .read-more-btn:hover {
-    background-color: #555;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* Community Partners Component Styles */
 #community-partners-component .community-partners {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #e8e8e8;
-    border-radius: 5px;
-}
-
-#community-partners-component h2 {
-    margin-bottom: 30px;
-}
-
-#community-partners-component .carousel {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
+    background-image: url('placeholder-partners-bg.jpg');
+    padding: 60px 0;
 }
 
 #community-partners-component .carousel img {
-    margin: 0 10px;
-    height: 80px;
-    border-radius: 5px;
+    width: 150px;
+    height: auto;
 }
 
 /* Footer Component Styles */
-#footer-component footer {
-    background-color: #333;
+#footer-component {
+    position: relative;
     color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+    padding: 40px;
+    overflow: hidden;
 }
 
-#footer-component nav ul {
-    list-style: none;
-    padding: 0;
+#footer-component .footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
-#footer-component nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-#footer-component nav ul li a {
-    color: white;
-    text-decoration: none;
+#footer-component .footer-content {
+    position: relative;
+    z-index: 1;
 }
